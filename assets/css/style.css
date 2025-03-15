@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+header {
+  background: linear-gradient(to right, #1affb3 0%, #08a89a 100%);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+header img {
+  max-width: 198px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 90% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0px 64px;
+}
+
+.bg-main {
+  background-image: url("../img/section-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 245px 16px;
+}
+
+.title {
+  font-size: 2.375rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #fff;
+}
+.emphasis {
+  color: #1affb3;
+}
+
+.sub-headline {
+  padding: 64px 16px 48px 16px;
+  border-bottom: 16px solid #1affb3;
+}
+
+.sub-headline__title {
+  width: 511px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+.sub-headline__title + .sub-headline__title {
+  width: 875px;
+  padding-bottom: 16px;
+}
+
+.sub-headline__button {
+  padding: 22px 140px;
+  background: #1affb3;
+  color: #000;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  filter: drop-shadow(4px 10px 44px rgba(14, 227, 125, 0.3));
+}
+
+.bg-form {
+  background-image: url("../img/section-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 64px 16px;
+}
+
+.form__title {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.form__subtitle {
+  padding-top: 16px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+form input,
+form select {
+  width: 590px;
+  padding: 13px 16px;
+  background-color: #0f0f0f;
+  border: 1px solid #1affb3;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 16px;
+  width: max-content;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 18px 100px;
+  border-radius: 50px;
+  background: #1affb3;
+  filter: drop-shadow(4px 10px 44px rgba(14, 227, 125, 0.3));
+}
+
+.bg-solution {
+  border-top: 16px solid #1affb3;
+  background-image: url("../img/section-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 64px 16px;
+}
+
+.solution {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 90px;
+}
+
+.solution__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.solution__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #fff;
+}
+
+.solution__list__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.solution__list__item p {
+  font-size: 1.125rem;
+}
+
+.solution__subtitle {
+  margin-top: 32px;
+  width: 890px;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+.solution__subtitle-emphasis {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.schedule {
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  .sub-headline__title + .sub-headline__title {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .bg-main {
+    background-position: right;
+    padding: 128px 0px;
+  }
+  .title {
+    font-size: 1.5rem;
+    line-height: 2.215rem;
+  }
+  .sub-headline,
+  .bg-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sub-headline__title,
+  .form__title,
+  .form__subtitle,
+  .solution__subtitle {
+    width: 90%;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  .sub-headline__button {
+    font-size: 1rem;
+    text-align: center;
+    padding: 16px 48px;
+  }
+
+  form input,
+  form select {
+    width: 90%;
+  }
+
+  form button {
+    font-size: 1rem;
+    padding: 16px 48px;
+  }
+  .bg-solution {
+    padding: 48px 16px 64px 16px;
+  }
+  .solution {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .solution__subtitle-emphasis {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+}
